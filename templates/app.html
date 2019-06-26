@@ -2,4 +2,18 @@
 
 {% block content %}
 
+<h2>Temperature Extraction Module</h2>
+<p>This plugin loads a JPEG image taken from FLIR Vue Pro 640 and converts it into temperature. The module assumes that the 'camera temperature' is 20C.</p>
+
+<form method="POST" id="file_form">
+    {% csrf_token %}
+
+    {{ form }}
+</form>
+
+<img id="photo" src="#" alt="Image" />
+<div id="bar"></div>
+<canvas id="palette" width="540" height="10px">The browser doesn't support HTML5 Canvas. Please use a different browser to see the palette.</canvas>
+</div>
+
 {% endblock %}

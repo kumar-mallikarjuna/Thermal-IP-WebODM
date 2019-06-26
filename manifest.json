@@ -1,5 +1,5 @@
 {
-	"name": "Test",
+	"name": "Temperature",
 	"webodmMinVersion": "0.6.0",
 	"description": "A plugin to create GCP files from images",
 	"version": "0.1.0",
