@@ -2,8 +2,8 @@
 
 {% block content %}
 
-<h2>Temperature Extraction Module</h2>
-<p>This plugin loads a JPEG image taken from FLIR Vue Pro 640 and converts it into temperature. The module assumes that the 'camera temperature' is 20C.</p>
+<h3>Temperature Extraction Module</h3>
+<p>This plugin loads a JPEG image taken from FLIR Vue Pro 640 and converts it into temperature plot. The module assumes that the 'camera temperature' is 20C.</p>
 
 <form method="POST" id="file_form">
     {% csrf_token %}
@@ -11,9 +11,23 @@
     {{ form }}
 </form>
 
-<img id="photo" src="#" alt="Image" />
-<div id="bar"></div>
+<form method="POST" id="temp_form">
+    {% csrf_token %}
+
+    {{ temp_form }}
+</form>
+
+<div>
+<span id="legend_left" style="float:left"></span>
+<!--
 <canvas id="palette" width="540" height="10px">The browser doesn't support HTML5 Canvas. Please use a different browser to see the palette.</canvas>
+-->
+<img id="colorscale" src="./colorscale_hot.jpg">
+<span id="legend_right" style=""></span>
+<div id="bar"></div>
 </div>
+
+<img id="photo" src="#" alt="Image" style="diplay:inline" />
+<img id="hist" src="#" alt="Histogram" style="diplay:inline" />
 
 {% endblock %}

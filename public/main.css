@@ -2,3 +2,12 @@
 	display: none;
 	margin-top: 1%;
 }
+
+#hist, #colorscale {
+	display: none;
+}
+
+input {
+	margin-top: 1%;
+	margin-bottom: 1%;
+}

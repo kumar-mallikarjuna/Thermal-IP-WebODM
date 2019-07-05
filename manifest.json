@@ -1,13 +1,13 @@
 {
 	"name": "Temperature",
 	"webodmMinVersion": "0.6.0",
-	"description": "A plugin to create GCP files from images",
-	"version": "0.1.0",
-	"author": "Piero Toffanin",
-	"email": "pt@masseranolabs.com",
-	"repository": "https://github.com/OpenDroneMap/WebODM",
-	"tags": ["gcp", "posm"],
-	"homepage": "https://github.com/OpenDroneMap/WebODM",
-	"experimental": true,
+	"description": "A plugin to extract temperature data from FLIR Vue Pro 640 19mm JPEG Files",
+	"version": "1.0.0",
+	"author": "Kumar Mallikarjuna, Kushagra Agrawal",
+	"email": "kumarmallikarjuna1@gmail.com, agrawalkushagra72@gmail.com",
+	"repository": "https://github.com/ojhaarjun1/calibration-plugin",
+	"tags": ["flir"],
+	"homepage": "https://github.com/ojhaarjun1/calibration-plugin",
+	"experimental": false,
 	"deprecated": false
 }
