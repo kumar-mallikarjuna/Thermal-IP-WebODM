@@ -204,7 +204,7 @@ class RawTaskView(TaskView):
 class Plugin(PluginBase):
 
     def main_menu(self):
-        return [Menu("Temperature", self.public_url(""), "")]
+        return [Menu("Temperature", self.public_url(""), "fa fa-camera fa-fw")]
 
     def include_js_files(self):
     	return ['main.js']
